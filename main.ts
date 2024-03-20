@@ -1,4 +1,5 @@
 let Soil = 0
+basic.showIcon(IconNames.Yes)
 basic.forever(function () {
     Soil = Math.idiv(pins.analogReadPin(AnalogPin.P1), 10)
     serial.writeValue("Humid", Soil)
